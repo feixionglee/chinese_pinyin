@@ -97,7 +97,7 @@ class Pinyin
           end
         else
           if char =~ /[a-zA-Z0-9]/
-            results << char.downcase
+            results << char.upcase
           elsif results.last != splitter
             results << splitter
           else
